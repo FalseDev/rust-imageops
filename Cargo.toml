@@ -1,0 +1,19 @@
+[package]
+name = "imageops"
+version = "0.1.0"
+authors = ["FalseDev <59121948+FalseDev@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "0.23.14"
+
+[lib]
+name = "imageops"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.13.2"
+features = ["extension-module"]
+
